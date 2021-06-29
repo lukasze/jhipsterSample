@@ -1,0 +1,12 @@
+entity User {
+	name String,
+    lastName String
+}
+entity Address {
+	street String,
+    city String
+}
+
+relationship OneToOne {
+  User{user} to Address{address}
+}
